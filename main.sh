@@ -16,6 +16,7 @@ sed -i "s/localhost/$(hostname -I | awk '{print $1}')/g" casc.yaml
 #7. inject ip list as input parameter
 #ip_list=$(paste -d, -s /tmp/servers.list)
 #sed -i "s/10.10.10.10/$ip_list/g" casc.yaml
+#sed -i "s/localhost/$(hostname -I | awk '{print $1}')/g" casc.yaml
 
 
 #2. build jenkins as code

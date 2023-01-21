@@ -7,7 +7,7 @@ sudo rm -rf /var/jenkins_home/workspace/jcasc
 git clone https://github.com/google/tsunami-security-scanner.git
 cd tsunami-security-scanner
 docker build -t tsunami .
-
+#
 #2. Run vulnerable machine for test
 docker run --name vulnerable -p 8888:8888 -d jupyter/base-notebook start-notebook.sh --NotebookApp.token=''
 
